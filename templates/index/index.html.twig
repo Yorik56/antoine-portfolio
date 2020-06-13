@@ -1,0 +1,279 @@
+{% extends ('base.html.twig') %} {% block body %}
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Top Search Form Area -->
+    <div class="top-search-area">
+        <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <!-- Close -->
+                        <button type="button" class="btn close-btn" data-dismiss="modal"><i class="ti-close"></i>
+                        </button>
+                        <!-- Form -->
+                        <form action="index.html.twig" method="post">
+                            <input type="search" name="top-search-bar" class="form-control"
+                                   placeholder="Search and hit enter...">
+                            <button type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-end" id="alimeNav">
+
+                        <!-- Logo -->
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler  ">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav owl-nav">
+                                <ul id="nav">
+                                    <li class="cursor" id="btn-nav-mobile0" data-target="#carouselExampleIndicators"
+                                        data-slide-to="0"><a
+                                                href="http://localhost:8080/scarfolio/public/">Home</a></li>
+                                    <li><a class="cursor" id="btn-nav-mobile1" data-target="#carouselExampleIndicators"
+                                           data-slide-to="1">Présentation</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                </div>
+            </div>
+            </nav>
+        </div>
+        </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Welcome Area Start -->
+    <section class="welcome-area"></section>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bckgd.png);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12 col-lg-8 col-xl-6">
+                                <div class="welcome-text">
+                                    <h2>Antoine <br>Duchemin</h2>
+                                    <p>Level Design, Artiste 3D et Game Design.</p>
+                                    <div class="hero-btn-group">
+                                        <a href="mailto:antoine.g.duchemin@gmail.com"
+                                           class="btn alime-btn mb-3 mb-sm-0 mr-4">Contact</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div id="slide_2" class="single-welcome-slide  bg-img bg-overlay"
+                     style="background-image: url(img/bckgd4.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+
+                            <div class="card mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img class="card-img" src="img/PhotoPresentation.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">A propos de moi</h5>
+                                            <p class="card-text">
+                                                Passionné par la 3D, le design et le jeux
+                                                vidéo.<br>
+                                                Ce site est là pour présenter l'essentiel de mes
+                                                créations.
+                                                Je travaille essentiellement sur Blender, Krita, Unreal engine 4 et 3D
+                                                Coat.<br>
+                                                Connaissance avancée en dessins, Digital Painting, Texturing,
+                                                Modélisation et Animation 3D.<br>
+                                                Mon objectif est de créer, de l'idée au concret,
+                                                du croquis papier à la modélisation en 3D, des portes vers d'autres
+                                                mondes où
+                                                l'imagination est
+                                                la seul limite.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <!-- Gallery Area Start -->
+    <div class="alime-portfolio-area section-padding-80 ">
+    <div class="container-fluid body_page">
+        <div class="row">
+            <div class="col-12">
+                <!-- Projects Menu -->
+                <div class="alime-projects-menu">
+                    <div class="portfolio-menu ">
+                        <div class="row center-div">
+                            <button class="btn active" data-filter=".level">Level Design</button>
+                            <div class="dropdown">
+                                <button type="button" class="btn" data-filter="none" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                    Game Design
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    {% for game in games %}
+                                        <button class="dropdown-item"
+                                                data-filter=".{{ game.id }}">{{ game.libelle }}</button>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" class="btn" data-filter="none" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                    Modèle 3D
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    {% for modele in modeles %}
+                                        <button class="dropdown-item"
+                                                data-filter=".{{ modele.id }}">{{ modele.libelle }}</button>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <button class="btn" data-filter=".dessin">Dessin</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Header Start -->
+        <div class="row alime-portfolio mb-5">
+            <!-- Single Gallery Item -->
+            {% set actual_folder = false %} {% for photo in photo %} {% if photo.dossier != null %} {% if actual_folder != photo.dossier.id %} {% set actual_folder = photo.dossier.id %}
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item {{ photo.dossier.id }}  wow fadeInUp"
+                     data-wow-delay="100ms">
+                    <h1>{{ photo.dossier.libelle }}</h1>
+                    <p>{{ photo.dossier.description }}</p>
+                </div>
+            {% endif %}
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item {{ photo.dossier.id }} mb-30 wow fadeInUp"
+                     data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="{{ asset("uploads/" ~ photo.image) }}" alt="">
+                        <div class="hover-content">
+                            <a href="{{ asset("uploads/" ~ photo.image) }}" class="portfolio-img">+</a>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="col-12 col-sm-6 col-lg-3 single_gallery_item {{ photo.categorie.libelle }} mb-30 wow fadeInUp"
+                     data-wow-delay="100ms">
+                    <div class="single-portfolio-content">
+                        <img src="{{ asset("uploads/" ~ photo.image) }}" alt="">
+                        <div class="hover-content">
+                            <a href="{{ asset("uploads/" ~ photo.image) }}" class="portfolio-img">+</a>
+                        </div>
+
+                    </div>
+                </div>
+            {% endif %} {% endfor %}
+        </div>
+    </div>
+
+
+    <!-- Gallery Area End -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Footer -->
+    <footer class="pt-5 pb-4" id="contact">
+
+        <div class="container-fluid">
+            <div class="row center-div">
+                <div class="col-12 col-lg-4">
+                    <i class="fas fa-map-marker"> Adresse :</i>
+                    <p>Vannes 56000<br>Morbihan</p>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <i class="far fa-envelope"> Contact :</i>
+                    <p>Vous pouvez me contacter, pour toutes questions : <a href="mailto:antoine.g.duchemin@gmail.com"
+                                                                            class="btn btn-secondary mb-3 mb-sm-0 mr-4">ici</a>
+                    </p>
+
+                </div>
+                <div class="col-12 col-lg-4">
+                    <i class="far fa-user"> A propos:</i>
+                    <p>Développé sur Blender 2.8.<br>
+                        Unreal Engine 4.23.<br>
+                        3D COAT V49.<br>
+                        Krita 4.2.5.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row colorlib ">
+            <div class="col-12">
+                <div class="footer-content d-flex align-items-center justify-content-between">
+                    <!-- Copywrite Text -->
+                    <div class="copywrite-text center-div">
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | This template is made with <i class="far fa-heart"></i> by <a
+                                    href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                    <!-- Footer Logo -->
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+{% endblock %}
